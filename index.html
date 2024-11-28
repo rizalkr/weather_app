@@ -75,17 +75,20 @@
       </div>
     </section>
     <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <!-- Canvas for Weather Chart -->
-  
-
-    <!-- Forecast for Next 7 Days -->
+    <!-- Canvas for Weather Chart -->
     <section class="forecast" hidden>
       <section class="charts" id="chartSection">
         <canvas id="weatherChart"></canvas>
       </section>
       <div class="forecast-details"></div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-part">
+      <h2>Weather News</h2>
+      <div id="news"></div>
     </section>
   </div>
   <!-- Dark mode toggle -->
@@ -106,34 +109,13 @@
     <span class="theme-color"></span>
     <span class="theme-color"></span>
   </div>
-  <section class="copyright">
+  <footer class="copyright">
     <p>
-      Made with ❤️ by <a href="https://github.com/abdellatif-laghjaj" target="_blank">Abdellatif Laghjaj</a>
+      Made by <a href="#" target="_blank">Rizal Kurnia x Dhamar Ilham K</a>
     </p>
-  </section>
+  </footer>
   <!-- Scripts -->
   <script src="js/script.js"></script>
-  <script>
-    // Get references to DOM elements
-    const detectBtn = document.querySelector('.input-part button');
-    const backIcon = document.getElementById('backIcon');
-    
-    // Add click event listener to detectBtn
-    detectBtn.addEventListener('click', () => {
-      // Toggle visibility of forecastSection
-      const forecastSection = document.querySelector('.forecast');
-      forecastSection.removeAttribute('hidden');
-      
-      // Call function to update chart (if needed)
-      updateChart(); // Replace with your chart update function
-    });
-    
-    // Add click event listener to backIcon
-    backIcon.addEventListener('click', () => {
-      // Reload the page
-      location.reload();
-    });
-  </script>
-  
+  <script src="js/news.js"></script>
 </body>
 </html>

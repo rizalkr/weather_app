@@ -10,7 +10,8 @@ const wrapper = document.querySelector(".wrapper"),
   arrowBack = wrapper.querySelector("header i");
 
 let api;
-let apiKey = "b190a0605344cc4f3af08d0dd473dd25";
+let apiKey = "e5940dfdcaaee0cf089cbb4eabb8e055";
+let newsApi = "5918ef80d06047b98441879799d3570c";
 
 const weatherChartCtx = document.getElementById("weatherChart").getContext("2d");
 let weatherChart;
@@ -321,4 +322,4 @@ function getTheme() {
   }
 }
 
-getTheme(); // Initialize theme on page load
+getTheme(); 
