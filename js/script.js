@@ -10,8 +10,7 @@ const wrapper = document.querySelector(".wrapper"),
   arrowBack = wrapper.querySelector("header i");
 
 let api;
-let apiKey = "e5940dfdcaaee0cf089cbb4eabb8e055";
-let newsApi = "5918ef80d06047b98441879799d3570c";
+let apiKey = "YOUR_OPENWEATHERMAP_API_KEY"; // OpenWeatherMap API key
 
 const weatherChartCtx = document.getElementById("weatherChart").getContext("2d");
 let weatherChart;
