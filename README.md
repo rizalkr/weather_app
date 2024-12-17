@@ -8,6 +8,11 @@ This web app is using the `openweathermap` API and on news.js use api `mediastac
 
 `js/script`
 
-`apiKey="YOUR_API_KEY_HERE"`
+`apiKey="OPEN_WEATHER_API"`
+
+`js/news`
+
+`apikey="MEDIASTACK_API"`
+
 
 Credit : Rizal Kurnia
